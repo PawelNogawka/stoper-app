@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stoper</title>
+    '
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="stoper">
+      <h1>stoper</h1>
+      <p class="time">0:00</p>
+      <p class="last-time">0:00</p>
+      <ul>
+        <li>
+          <button class="start-btn"><i class="fa-solid fa-play"></i></button>
+        </li>
+        <li>
+          <button class="pause-btn"><i class="fa-solid fa-pause"></i></button>
+        </li>
+        <li>
+          <button class="stop-btn"><i class="fa-solid fa-stop"></i></button>
+        </li>
+        <li>
+          <button class="reset-btn"><i class="fa-solid fa-xmark"></i></button>
+        </li>
+        <li><button class="archives-btn">archives</button></li>
+      </ul>
+      <button class="open-modal"><i class="fa-solid fa-question"></i></button>
+      <ul class="times-list"></ul>
+      <div class="shadow">
+        <div class="popup">
+          <h2>instruction:</h2>
+          <p><i class="fa-solid fa-play"></i>play</p>
+          <p><i class="fa-solid fa-pause"></i>pause</p>
+          <p><i class="fa-solid fa-stop"></i>stop</p>
+          <p>
+            <i class="fa-solid fa-xmark"></i>delete everything including the
+            archive
+          </p>
+          <p><strong>archives </strong> see earlier measurements</p>
+          <button class="close">close</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
